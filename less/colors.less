@@ -1,0 +1,192 @@
+// Custom Colors
+// =============
+
+@white: #ffffff;
+@black: #000000;
+@blue: #3099FF;
+@light-grey: #cccccc;
+@mid-grey: #999999;
+@dark-grey: #666666;
+@red: #f26c4f;
+@green: #309966;
+@main-title: @black;
+
+@default-width:1024px;
+
+@color-one:@blue; //blue
+@color-two:@dark-grey; //dark-grey
+@color-three:#7d82be; //purple
+@color-four:#ff9000; // yellow
+@color-five:#de4a8d; //pink
+@color-six:#ff6600; // orange
+@color-seven:#333666; // dark-purple
+@color-eight:#006699; // dark-blue
+@color-nine:#006633; // dark-green
+@color-ten:@black;
+
+@colors: @color-one,@color-two,@color-three,@color-four,@color-five,@color-six,@color-seven,@color-eight,@color-nine,@color-ten;
+
+//@color-ten:#9A8419;
+//@color-four:#d1d2d4;
+//@color-five:#007aba;
+//@color-six:#F86D18;
+//@color-seven:#bb007b;
+//@color-eight:#20609a;
+//@color-nine:#e6e7e9;
+//@color-ten:#000000;
+
+@menu-header-background-color: white;
+@primary-color:@color-one;
+@secondary-color:@color-two;
+@tertiary-color:@color-three;
+
+// Main Colors
+// ===========
+
+// Components
+@primary-color: @color-one;
+@primary-color-inverted: @white;
+@color-one-inverted: @primary-color-inverted;
+// Buttons
+@secondary-color: @color-two;
+@secondary-color-inverted: @white;
+@color-two-inverted: @secondary-color-inverted;
+// Navigation Bar
+@tertiary-color: @color-three;
+@tertiary-color-inverted: @white;
+@color-three-inverted: @tertiary-color-inverted;
+// Drawer
+@quaternary-color: @dark-grey;
+@quaternary-color-inverted: @white;
+@color-four-inverted: @quaternary-color-inverted;
+
+@color-five-inverted: @primary-color-inverted;
+@color-six-inverted: @primary-color-inverted;
+@color-seven-inverted: @primary-color-inverted;
+@color-eight-inverted: @primary-color-inverted;
+@color-nine-inverted: @primary-color-inverted;
+@color-ten-inverted: @primary-color-inverted;
+
+// Body
+@foreground-color: @black;
+@background-color: @white;
+@foreground-color-inverted: @white;
+@background-color-inverted: @mid-grey;
+// Validation States
+@validation-error: @red;
+@validation-success: @green;
+// Disabled States
+@disabled-color: #727272;
+@disabled-color-inverted: #ccc;
+
+@transparency: rgba(255,255,255,0.8);
+@transparency-fallback-png: url('assets/transparency-light.png');
+
+@colors-inverted: @color-one-inverted,@color-two-inverted,@color-three-inverted,@color-four-inverted,@color-five-inverted,@color-six-inverted,@color-seven-inverted,@color-eight-inverted,@color-nine-inverted,@color-ten-inverted;
+
+@menu-color-count: 3;
+
+// Detailed Color setup
+// ====================
+
+// Body
+@font-color: @foreground-color;
+@font-color-inverted: @foreground-color-inverted;
+@title-color: @main-title;
+@title-color-inverted: @primary-color-inverted;
+
+// Buttons
+@button-color: @color-one;
+@menu-button-color: @color-one;
+@button-color-inverted: @primary-color-inverted;
+@button-color-hover: darken(@button-color, 40%);
+@button-color-disabled: @disabled-color;
+
+@button-text-color: @primary-color-inverted;
+@button-text-color-hover: @primary-color-inverted;
+@button-text-color-disabled: @disabled-color-inverted;
+
+@button-border-color: @button-color;
+@button-border-color-hover: @button-color-hover;
+@button-border-color-disabled: @button-color-disabled;
+
+// Navigation 
+@navigation-color: @black;
+
+@navigation-icon-color: @tertiary-color-inverted;
+@navigation-icon-color-hover: darken(@navigation-icon-color, 40%);
+
+@navigation-progress-color: @navigation-icon-color;
+@navigation-progress-color-hover: darken(@navigation-progress-color, 40%);
+
+@navigation-progress-background-color: @navigation-color;
+@navigation-progress-background-color-hover: darken(@navigation-color, 40%);
+
+@navigation-progress-border-color: @navigation-icon-color;
+
+// Drawer
+@drawer-color: @quaternary-color;
+@drawer-border-color: darken(@drawer-color, 20%);
+
+@drawer-icon-color: @quaternary-color-inverted;
+@drawer-icon-color-hover: darken(@drawer-icon-color, 40%);
+
+@drawer-item-color: @drawer-color;
+@drawer-item-color-hover: darken(@drawer-item-color, 40%);
+@drawer-item-color-selected: @drawer-item-color-hover;
+@drawer-item-color-disabled: @item-color-disabled;
+
+@drawer-item-text-color: @quaternary-color-inverted;
+@drawer-item-text-color-hover: @drawer-item-text-color;
+@drawer-item-text-color-selected: @drawer-item-text-color;
+@drawer-item-text-color-disabled: @item-text-color-disabled;
+
+@drawer-progress-color: @drawer-item-text-color;
+@drawer-progress-color-hover: darken(@drawer-progress-color, 40%);
+
+@drawer-progress-border-color: darken(@drawer-item-color, 20%);
+
+// Components
+@component-background-color: darken(@background-color, 10%);
+
+@item-color: @primary-color;
+@item-color-hover: darken(@item-color, 20%);
+@item-color-disabled: @disabled-color;
+@item-color-visited: desaturate(@item-color, 90%);
+@item-color-selected: @item-color-hover;
+
+@item-text-color: @primary-color-inverted;
+@item-text-color-hover: @item-text-color;
+@item-text-color-disabled: @item-text-color;
+@item-text-color-visited: @item-text-color;
+@item-text-color-selected: @item-text-color;
+
+@item-body-color: @background-color;
+@item-body-text-color: @foreground-color;
+
+@item-border-color: @item-color;
+@item-border-color-hover: @item-color-hover;
+@item-border-color-disabled: @item-color-disabled;
+@item-border-color-visited: @item-color-visited;
+@item-border-color-selected: @item-color-selected;
+@item-border-color-inverted: @item-text-color;
+
+// Menu
+@menu-item-color: @primary-color;
+@menu-item-text-color: @primary-color-inverted;
+@menu-item-progress-color: darken(@menu-item-color, 20%);
+@menu-item-progress-fill-color: @menu-item-text-color;
+@menu-item-progress-border-color: transparent;
+
+// Notify
+@notify-color: @primary-color;
+@notify-text-color: @primary-color-inverted;
+
+@notify-icon-color: @notify-text-color;
+@notify-icon-color-hover: darken(@notify-color, 20%);
+
+@notify-button-color: @notify-text-color;
+@notify-button-color-hover: darken(@notify-color, 20%);
+
+@notify-button-text-color: @notify-color;
+@notify-button-text-color-hover: @notify-text-color;

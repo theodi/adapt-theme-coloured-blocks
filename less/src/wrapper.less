@@ -1,0 +1,24 @@
+// Layout
+// ======
+
+#wrapper {
+    width: 1px;
+    min-width: @default-width;
+    *width: @default-width;
+    padding-top:0px;
+    .ie8 & {
+        max-width:@ie8-max-width;
+        margin:0 auto;
+    }
+    @media all and (max-width:(@device-width-large - 1px)) {
+        width: 1px;
+        min-width: 100%;
+        *width: 100%;
+    }
+    @media all and (max-width:(@device-width-medium - 1px)) {
+        width: 1px;
+        min-width: 100%;
+        *width: 100%;
+        padding-top:0px;
+    }
+}
